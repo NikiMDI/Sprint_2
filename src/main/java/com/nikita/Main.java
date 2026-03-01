@@ -13,6 +13,7 @@ public class Main {
         Food[] product = {meat, appleRed, appleGreen};
         ShoppingCart cart = new ShoppingCart(product);
 
+
         System.out.println("Общая сумму товаров без скидки = " + cart.allTotalPrice());
         System.out.println("Общая сумму товаров со скидкой = " + cart.allTotalPriceWithDiscount());
         System.out.println("Сумма всех вегетарианских продуктов без скидки = " + cart.allTotalPriceVeganProduct());
