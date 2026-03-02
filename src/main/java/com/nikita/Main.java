@@ -4,11 +4,14 @@ import com.nikita.model.Food;
 import com.nikita.model.Meat;
 import com.nikita.service.ShoppingCart;
 
+import static com.nikita.model.constants.Colour.RED;
+import static com.nikita.model.constants.Colour.GREEN;
+
 public class Main {
     public static void main(String[] args) {
         Meat meat = new Meat(5,100);
-        Apple appleRed = new Apple(10, 50, "red");
-        Apple appleGreen = new Apple(8, 60, "green");
+        Apple appleRed = new Apple(10, 50, RED);
+        Apple appleGreen = new Apple(8, 60, GREEN);
 
         Food[] product = {meat, appleRed, appleGreen};
         ShoppingCart cart = new ShoppingCart(product);
